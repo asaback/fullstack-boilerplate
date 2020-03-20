@@ -7,26 +7,31 @@ import fetch from 'isomorphic-unfetch';
 import DefaultLayout from '../components/layouts/DefaultLayout';
 
 /* components */
-import HeadlineModule from '../components/modules/HeadlineModule';
-import ParagraphModule from '../components/modules/ParagraphModule';
+import About from '../components/modules/About/index';
+import Work from '../components/modules/Work/index';
+import Contact from '../components/modules/Work/index';
 
 /* Helper function to fetch data - do we need this as an extra function? Debatable. 😊 */
 function fetchUrl(url) {
-	return fetch(url).then((r) => r.json());
+	return fetch(url).then(r => r.json());
 }
 
 /* This route gets hit when our user appends a slug to
 the url and therefore the page request, e.g. your-site.com/about */
 const SlugPage = ({ data }) => {
 	const { content } = data;
-	const headlineModuleData = content.body.find((item) => item.component === 'Headline Module');
-	const paragraphModuleData = content.body.find((item) => item.component === 'Paragraph Module');
-	const paragraphTextContent = paragraphModuleData.copy.content.map((paragraph) => paragraph.content[0].text);
+	console.log(content);
+	console.log(`🌈 I am getting this content from Storybok: ${content}`);
+	const about = content.components.find(item => item.component === 'about');
+	// const work = content.components.find(item => item.component === 'work');
+	
+	
+	/* Now you need to map your own components, I just left the headline module as reference */
 	return (
-		<DefaultLayout>
-			{headlineModuleData ? <HeadlineModule title={headlineModuleData.title} /> : null}
-			{paragraphModuleData ? <ParagraphModule copy={paragraphTextContent} /> : null}
-		</DefaultLayout>
+	  <DefaultLayout>
+		{ About ? <About image={about.image} text={about.text} /> : null }
+		{/* { Work ? <Work text={work.Description} /> : null } */}
+	  </DefaultLayout>
 	);
 };
 

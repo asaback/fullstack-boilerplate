@@ -35,6 +35,9 @@ export default async (req, res) => {
 		.then((response) => {
 			const { data: { story: { content } } } = response; /* Same as: const content = data.story.content */
 			const data = { content };
+
+			console.log(content);
+
 			res.setHeader('Content-Type', 'application/json');
 			res.statusCode = 200;
 			res.end(JSON.stringify(data));
