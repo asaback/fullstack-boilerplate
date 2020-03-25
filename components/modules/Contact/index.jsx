@@ -7,6 +7,7 @@ const Contact = () => {
       <Link href="/">
         <a>Back</a>
       </Link>
+      <p>{}</p>
     </div>
   );
 };
