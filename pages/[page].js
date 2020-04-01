@@ -31,7 +31,7 @@ const SlugPage = ({ data }) => {
     <DefaultLayout>
       {about ? <About image={about.image} text={about.text} text2={about.text2} /> : null}
       {work ? <Work text={work.text} image={work.image} image2={work.image2} image3={work.image3} image4={work.image4}/> : null}
-      {contact ? <Contact text={contact.text} /> : null}
+      {contact ? <Contact name={contact.name} number={contact.number} email={contact.email}/> : null}
 	  {home ? <Home image={home.image}text={home.text} /> : null}
     </DefaultLayout>
   );

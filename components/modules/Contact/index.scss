@@ -1,0 +1,30 @@
+.root {
+    width: 35vw;
+    height: 40vw;
+    background-color: white;
+    margin: auto;
+    box-shadow: 16px 16px 0px rgba(0, 0, 0, 0.09);
+    overflow: hidden;
+    object-fit: contain;
+
+  h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 2vw;
+    
+  }
+
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    margin-left: 2vw;
+    
+  }
+}
+
+.color {
+    background: #D1919C;
+    height: 52vh;
+    margin-bottom: 1.5vw;
+}

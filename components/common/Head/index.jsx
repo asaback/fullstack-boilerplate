@@ -16,7 +16,7 @@ const Head = ({ title, description }) => (
       rel="stylesheet"
     ></link>
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     ></link>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />

@@ -1,8 +1,12 @@
+import style from "./index.scss"
+
 const Contact = props => {
   return (
-    <div>
-      <h1>Contact</h1>
-      <p>{props.contact}</p>
+    <div className={style.root}>
+      <div className={style.color}></div>
+      <h1>{props.name}</h1>
+      <p>{props.number}</p>
+      <p>{props.email}</p>
     </div>
   );
 };
