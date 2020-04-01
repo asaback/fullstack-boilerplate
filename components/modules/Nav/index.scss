@@ -1,0 +1,12 @@
+.root {
+  display: inline-grid;
+  grid-template-columns: 5;
+  a:first-child {
+    grid-row: 1;
+  }
+  a {
+    font-family: "Open Sans", sans-serif;
+    color: #4f1616;
+    text-decoration: none;
+  }
+}

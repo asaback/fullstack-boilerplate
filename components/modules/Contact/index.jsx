@@ -1,13 +1,8 @@
-import Link from "next/link";
-
-const Contact = () => {
+const Contact = props => {
   return (
     <div>
       <h1>Contact</h1>
-      <Link href="/">
-        <a>Back</a>
-      </Link>
-      <p>{}</p>
+      <p>{props.contact}</p>
     </div>
   );
 };

@@ -6,15 +6,7 @@ const DefaultPage = () => {
   return (
     <DefaultLayout>
       <h1>Åsa Back</h1>
-      <Link href="/about">
-        <a>about</a>
-      </Link>
-	  <Link href="/work">
-        <a>work</a>
-      </Link>
-	  <Link href="/contact">
-        <a>contact</a>
-      </Link>
+
     </DefaultLayout>
   );
 };

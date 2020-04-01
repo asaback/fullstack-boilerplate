@@ -1,22 +1,24 @@
-/* styles */
-import style from './index.scss';
-import resets from './styleReset.scss';
+import style from "./index.scss";
+import resets from "./styleReset.scss";
 
-/* components */
-import Head from '../../common/Head';
+import Head from "../../common/Head";
+import Nav from "../../modules/Nav/index";
 
-const DefaultLayout = (props) => {
-	const title = 'Hyper Island FED21';
-	const description = 'Kick-off template for FED21 students';
+const DefaultLayout = props => {
+  const title = "Åsa Back";
 
-	return (
-		<div className={(resets, style.root)}>
-			<div className={style.pageWrapper}>
-				<Head title={title} description={description} />
-				{props.children}
-			</div>
-		</div>
-	);
+  return (
+    <div className={(resets, style.root)}>
+      <div className={style.pageWrapper}>
+        <Head title={title} />
+        <div className="nav">
+          <Nav />
+        </div>
+
+        {props.children}
+      </div>
+    </div>
+  );
 };
 
 export default DefaultLayout;
