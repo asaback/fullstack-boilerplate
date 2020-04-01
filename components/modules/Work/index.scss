@@ -1,0 +1,50 @@
+.root {
+
+    width: 70vw;
+    height: 35vw;
+    background-color: white;
+    margin: auto;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 1fr;
+    
+    box-shadow: 16px 16px 0px rgba(0, 0, 0, 0.09);
+    overflow: hidden;
+    object-fit: contain;
+
+    img {
+        width: 50%;
+    }
+
+    p {
+        align-self: start;
+        margin-top: 2vh;
+    }
+
+    h2 {
+        align-self: end;
+        font-weight: bold;
+    }
+
+    p, h2 {
+        margin: auto;
+        width: 70%;
+        font-family: "Open Sans", sans-serif;
+        color: #5B0E0E;
+        letter-spacing: 0.05em;
+        line-height: 108.6%;
+        align-self: center;
+    }
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row: 1 / span 2;
+}
+
+.images img {
+    align-self: center;
+    justify-self: center;
+}
