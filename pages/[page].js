@@ -29,7 +29,7 @@ const SlugPage = ({ data }) => {
   /* Now you need to map your own components, I just left the headline module as reference */
   return (
     <DefaultLayout>
-      {about ? <About image={about.image} text={about.text} /> : null}
+      {about ? <About image={about.image} text={about.text} text2={about.text2} /> : null}
       {work ? <Work text={work.text} /> : null}
       {contact ? <Contact text={contact.text} /> : null}
 	  {home ? <Home image={home.image}text={home.text} /> : null}
