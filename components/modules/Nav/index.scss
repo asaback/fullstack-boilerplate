@@ -1,12 +1,16 @@
 .root {
   display: inline-grid;
-  grid-template-columns: 5;
-  a:first-child {
-    grid-row: 1;
-  }
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 30px;
+  margin-bottom: 5vw;
+  grid-column-start: inherit;
+  float: right;
+  
+
   a {
     font-family: "Open Sans", sans-serif;
     color: #4f1616;
     text-decoration: none;
+    
   }
 }

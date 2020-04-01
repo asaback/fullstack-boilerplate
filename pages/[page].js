@@ -5,6 +5,7 @@ import fetch from "isomorphic-unfetch";
 import DefaultLayout from "../components/layouts/DefaultLayout";
 
 /* components */
+import Home from "../components/modules/Home/index";
 import About from "../components/modules/About/index";
 import Work from "../components/modules/Work/index";
 import Contact from "../components/modules/Contact/index";
@@ -23,6 +24,7 @@ const SlugPage = ({ data }) => {
   const about = content.components.find(item => item.component === "about");
   const work = content.components.find(item => item.component === "work");
   const contact = content.components.find(item => item.component === "contact");
+  const home = content.components.find(item => item.component === "home");
 
   /* Now you need to map your own components, I just left the headline module as reference */
   return (
@@ -30,6 +32,7 @@ const SlugPage = ({ data }) => {
       {about ? <About image={about.image} text={about.text} /> : null}
       {work ? <Work text={work.text} /> : null}
       {contact ? <Contact text={contact.text} /> : null}
+	  {home ? <Home image={home.image}text={home.text} /> : null}
     </DefaultLayout>
   );
 };

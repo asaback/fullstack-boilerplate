@@ -5,7 +5,7 @@ import style from "./index.scss";
 function Nav() {
   return (
     <div className={style.root}>
-      <Link href="/">
+      <Link href="/home">
         <a>Home</a>
       </Link>
       <Link href="/about">
