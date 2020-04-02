@@ -26,10 +26,9 @@
     align-self: center;
   }
 
-
   img {
     width: 100%;
-    filter: contrast(110%) brightness(70%);
+    filter: contrast(110%) brightness(70%) hue-rotate(-50deg);;
   }
 }
 
