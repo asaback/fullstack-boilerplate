@@ -1,3 +1,5 @@
+// The contact page
+
 import style from "./index.scss"
 
 const Contact = props => {

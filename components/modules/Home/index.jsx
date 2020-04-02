@@ -1,3 +1,5 @@
+// The home page
+
 import style from "./index.scss";
 
 

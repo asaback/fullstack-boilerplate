@@ -1,5 +1,6 @@
-import Link from "next/link";
+//The nav bar component that is included in the defaul layout (always displayed)
 
+import Link from "next/link";
 import style from "./index.scss";
 
 function Nav() {
