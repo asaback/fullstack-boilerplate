@@ -1,3 +1,17 @@
+My biggest three challenges throughout the project
+
+1. Understanding the connection between next, react, storyblock.
+2. Connecting content from storyblok
+3. Not having a clear timeplan
+
+My biggest three learnings - what would you tell yourself if you started again?
+
+1. Not focusing too much on details
+2. Plan my time better from the beginning of the project
+3. Ask more questions
+
+
+-----------------------------------------------------------------------------------------------------------------
 # FED21 Data Interaction
 Boilerplate using React, Next.js and Storyblok.
 
